@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Geegees Hair Salon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/main.min.css" rel="stylesheet">
+    <link href="/css/stylesheet.css" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-secondary min-vh-100 d-flex flex-column">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-danger">
+      <div class="container-xxl">
+        <!-- navbar brand / title -->
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/logo-light.png" alt="Logo" class="src" width="128" height="72">
+          <span class="fw-bold text-light h4">Geegees Hair Salon</span>
+        </a>
+
+        <!-- navbar links -->
+        <div class="justify-content-end align-center d-none d-lg-inline-block" id="main-nav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stylists.html">Our Stylists</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reviews.html">Customer Reviews</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="btn btn-light rounded-pill" href="book.html">Book Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="Book">
+      <div class="container-xxl my-4 pt-4 bg-light" id="main-body">
+        <h2 class="fw-bold pt-2 ps-3">Book An Appointment</h2>
+        <form id="booking-details">
+          <div class="row justify-content-center my-4 px-5">
+            <div class="col-md-6">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Enter your First Name">
+            </div>
+            <div class="col-md-6">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Enter your Last Name">
+            </div>
+          </div>
+          <div class="row justify-content-center my-4 px-5">
+            <div class="col-md-6">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your Email">
+            </div>
+            <div class="col-md-6">
+              <label for="phone">Phone</label>
+              <input type="text" class="form-control" id="phone" placeholder="Enter your Phone Number">
+            </div>
+          </div>
+          <div class="row justify-content-center my-4 px-5">
+            <div class="col-md-6">
+              <label for="date">Date</label>
+              <input type="date" class="form-control" id="date">
+            </div>
+            <div class="col-md-6">
+              <label for="time">Time</label>
+              <input type="time" class="form-control" id="time">
+            </div>
+          </div>
+          <div class="row justify-content-center my-4 px-5">
+            <div class="col-md-6">
+              <label for="service">Service</label>
+              <select class="form-control" id="service">
+                <option>Haircut</option>
+                <option>Haircut + Blowdry</option>
+                <option>Haircut + Blowdry + Color</option>
+                <option>Haircut + Blowdry + Color + Highlights</option>
+                <option>Haircut + Blowdry + Color + Highlights + Waxing</option>
+                <option>Haircut + Blowdry + Color + Highlights + Waxing + Pedicure</option>
+                <option>Haircut + Blowdry + Color + Highlights + Waxing + Pedicure + Facial</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="service">Stylist</label>
+              <select class="form-control" id="stylist">
+                <option>Stylist 1</option>
+                <option>Stylist 2</option>
+                <option>Stylist 3</option>
+              </select>
+            </div>
+            <div class="my-4 form-floating">
+              <textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
+              <label for="comments" class="ps-4">Additional Comments</label>
+            </div>
+            <div class="mb-4">
+              <a href="confirmation.html" onclick="document.getElementById('booking-details').submit();" class="btn btn-danger"> Book </a>
+            </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-dark mt-auto">
+      <p class="text-light text-end p-2">Geegees Hair Salon</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
